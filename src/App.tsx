@@ -27,15 +27,15 @@ function App() {
           </p>
 
           <div className="mt-10 grid grid-cols-1 gap-5">
-            <button className="bg-gray-700 p-3 w-full rounded font-semibold">
+            <button className="bg-gray-700 p-3 w-full rounded font-semibold hover:bg-gray-600">
               <img src={GitHubIcon} alt="" className="w-5 inline mr-2" /> Login
               With GitHub
             </button>
-            <button className="bg-gray-700 p-3 w-full rounded font-semibold">
+            <button className="bg-gray-700 p-3 w-full rounded font-semibold hover:bg-gray-600">
               <img src={TwitterIcon} alt="" className="w-5 inline mr-2" /> Login
               With Twitter
             </button>
-            <button className="bg-gray-700 p-3 w-full rounded font-semibold">
+            <button className="bg-gray-700 p-3 w-full rounded font-semibold hover:bg-gray-600">
               <img src={GoogleIcon} alt="" className="w-5 inline mr-3" />
               Login With Google
             </button>
@@ -56,13 +56,25 @@ function App() {
           {/* Icon Links */}
           <div className="flex gap-5 ml-10">
             <Link to="/">
-              <img src={TwitterIcon} alt="Twitter" className="w-4 inline" />
+              <img
+                src={TwitterIcon}
+                alt="Twitter"
+                className="w-4 inline hover:opacity-75"
+              />
             </Link>
             <Link to="/">
-              <img src={GitHubIcon} alt="GitHub" className="w-4 inline" />
+              <img
+                src={GitHubIcon}
+                alt="GitHub"
+                className="w-4 inline hover:opacity-75"
+              />
             </Link>
             <Link to="/">
-              <img src={DiscordIcon} alt="GitHub" className="w-4 inline" />
+              <img
+                src={DiscordIcon}
+                alt="GitHub"
+                className="w-4 inline hover:opacity-75"
+              />
             </Link>
           </div>
         </div>
